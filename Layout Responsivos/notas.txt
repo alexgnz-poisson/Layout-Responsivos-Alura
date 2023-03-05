@@ -1,0 +1,137 @@
+Introduccion al EMMET 
+
+Es un plugin que va a generar código predefinido de manera abreviada. Eso supone que tenemos menos esfuerzo y 
+vamos a perder menos tiempo escribiendo nuestros códigos y eso va a ser muy útil en el desarrollo web.
+
+Sobre el plugin EMMET, es correcto afirmar que:
+Hay algunos editores de texto que ya lo tienen como un plugin nativo.
+Se supone que hay menos esfuerzo y tiempo con la utilización del EMMET.
+
+REM Y EM
+
+Sobre el em, que es una medida relativa a la fuente size de CSS, más específicamente, de la etiqueta madre de los 
+elementos que estamos utilizando. 
+
+Entonces el rem es una medida relativa también, pero con el mayor nivel de jerarquía que en nuestro proyecto
+
+El rem es el root ephemeral, significa que varía, pero en relación a una raíz, el root. Entonces, con el valor de 
+la font size de HTML, la ventaja de utilizar el rem es que es adaptable a todos los diferentes tamaños del navegador
+por ejemplo, porque los navegadores también tienen esas diferencias de tamaños. Esa función adaptable es un gran concepto 
+de layouts responsivos.
+
+Entonces es muy importante tener en cuenta estos conceptos de las medidas relativas.
+En otras palabras
+
+REM es una unidad relativa a la propiedad font-size de la etiqueta <html>, por lo tanto si la etiqueta <html> tiene 
+16px de font-size 1 REM equivale a 16px. 
+EM es relativa a la propiedad font-size de la etiqueta madre, por lo tanto, si la etiqueta madre es un font-size 
+de 16px, 1 EM equivale a 16px.
+
+Tipos de Imagenes 
+
+PNG 
+-Poco compacto
+-Mantiene la calidad de la imagen 
+-Tamaño Elevado : 29.6KB
+
+JPG
+-Muy compacto.
+-Calidad de la imagen es inferior
+-Tamaño leve : 9.29KB
+
+GIF
+-Calidad e la imagen es baja.
+-Uso limitado
+-Tamañp depende de la calidad de la iamgen : 19KB
+
+SVG
+-Imagenes vectoriales en dos dimensiones
+-Mas leve
+-Tamaño variable : 4.26KB
+
+Cuando utilizar SVG?
+-Logotipos
+-Iconos
+-Ilustraciones mas sencillas 
+
+
+Layout mobile y variables CSS
+Mobile First 
+Concepto que la version movil de una pagiona web debe ser la primera 
+Ventajas
+-Se concentra en lo esencial
+-Informaciones de mas facil acceso
+-Maximo Rendimiento
+-Reduce el codigo fuente
+-Uso de HTML5
+
+Viewport y su Contenido 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> esta es una de las etiquetas importantes que 
+debe tener siempre nuestros sitios web para poder trabjar de manera correcta los tamaños 
+
+
+Las variables CSS nos ayudan en la manutención del código y también facilita el uso de propiedades de estilo.
+
+¿Cómo debemos declarar y utilizar las variables CSS?
+Declarar dentro de algún selector (que se logra ser el :root{}) escribiendo el --nombre-de-la-variable: valor y 
+llamar las variables según la sintaxis, utilizando una función var con el nombre de la variable dentro de esa función.
+
+porque precisamos declarar variables CSS dentro de algún selector. Y para utilizar esas variables necesitamos seguir la 
+sintaxis var(--nombre-de-la-variable).
+
+Unidades de Medida Viewport 
+Las unidades de viewport son unidades relativas, como por ejemplo, el porcentaje.
+
+En el ejemplo abajo necesitamos dejar las imágenes ocupando toda lo ancho de la pantalla, según el diseño que el 
+equipo de Design nos envió. Nosotros tenemos la estructura de la sección montada y también el código CSS del imágen.
+
+Medidas absolutas y relativas
+Las medidas absolutas son definidas de manera determinada, independiente del contexto, como por ejemplo la medida pixel. 
+Y las medidas relativas lo hacen tomando otros elementos como referencia y por eso son más utilizadas en los 
+diseños responsivos, porque van a adaptarse ahí a los diferentes tamaños de los dispositivos de las pantallas.
+
+Limitaciones de los dispositivos 
+
+En los tiempos actuales tenemos una gran cantidad de dispositivos y en cada dispositivo hay sus ventajas y desventajas, 
+diferencias de hardware y software, e incluso sus limitaciones.
+
+A pensar en los dispositivos móviles, ¿cuál característica puede causar una seria complicación para el acceso de las 
+páginas web?
+
+Velocidad de la red de internet.
+Porque aunque haya tecnologías cada vez más avanzadas como las redes 4G o 5G, existen innumerables condiciones que 
+pueden dejar la señal de internet más flaca, que imposibilita cualquier acceso a los datos.
+
+La herramienta "PageSpeed Insights" analiza el contenido de una página web y te sugiere qué hacer para mejorar la 
+velocidad de esa una página.
+
+Inserta un enlace que la herramienta analizan las versiones mobile y desktop, con cálculos de velocidad y performance,
+sugestiones de lo que pueden acelerar la carga.
+
+
+Referente al código semántico, hablamos de escribir un código legible y con contenido 
+bien escrito y estructurado.
+
+¿Cuáles son las principales ventajas de escribir un código semántico?
+Para que otras personas desarrolladoras puedan entender. Debemos recordar que nuestro código tal vez necesite pasar a otras 
+personas y ellas necesitan entender lo que sucede en nuestro código cuando tengan que leerlo.
+
+Para atender a los requisitos de accesibilidad.Debemos dejar nuestra página lo más inclusiva y para eso precisamos 
+utilizar todas las etiquetas correctas para demarcar todo el contenido de la página web.
+
+Para herramientas de indexación.Hay muchos bots (herramientas automáticas) que verifican todo el código de nuestro 
+proyecto, después hacen una validación para cambiar el posicionamiento de nuestra página en los resultados de motores de 
+búsqueda (ejemplo:Google, Bing, Yahoo).
+
+Las media queries permiten crear páginas con estilos diferentes en el mismo archivo CSS por muchas condiciones diferentes, 
+como por ejemplo, la largura de la pantalla de un dispositivo.
+
+Después que terminar de desarrollar todo el layout de la página en la versión mobile, el próximo paso es el diseño en 
+la versión tablet, en este caso empieza a partir de 768px de largura. Para insertar todo el estilo sin cambiar la 
+versión mobile, necesitamos utilizar un media query.
+
+¿Cuál opción presenta la sintaxis correcta de media query necesaria?
+
+@media (min-width: 768px) { “estilo aquí” }
+porque está con la condición de las “pantallas con largura a partir de 768px”
